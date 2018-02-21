@@ -1,0 +1,9 @@
+[
+	{
+		"SITE_UUID": "ffcc84ae-6a19-46d4-8311-e3ed875ae58d",
+		"SITE_NAME": "alertcarolina",
+		"CREATE_BACKUPS": 1,
+		"RECREATE_MULTIDEV": 1,
+		"LIVE_URL": "https://alertcarolina.unc.edu/"
+	}
+]
