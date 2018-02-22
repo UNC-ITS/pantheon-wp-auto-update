@@ -26,9 +26,11 @@
 	"label": "Default",
 	"url": "https://update-wp-alertcarolina.pantheonsite.io",
 	"referenceUrl": "https://alertcarolina.unc.edu",
-	"hideSelectors": [],
+	"removeSelectors": [
+        ".dev-warning"
+  ],
 	"selectors": [
-	"document"
+	  "document"
 	],
 	"readyEvent": null,
 	"delay": 1500,
