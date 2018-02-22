@@ -102,29 +102,6 @@ jobs:
             - store_artifacts:
                 path: /tmp/artifacts
                 destination: artifacts
-
-    behat_test:
-        <<: *defaults
-        steps:
-            - checkout
-
-            - restore_cache:
-                keys:
-                    - composer-cache
-
-            - run:
-                name: declare environment variables
-                command: ./.circleci/set-up-globals.sh
-
-            - run:
-                name: run behat tests
-                command: ./.circleci/behat-test.sh
-                no_output_timeout: 30m
-
-            - save_cache:
-                key: composer-cache
-                paths:
-                    - $HOME/.composer/cache
     
     deploy_updates:
         <<: *defaults
