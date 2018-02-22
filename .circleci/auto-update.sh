@@ -30,8 +30,6 @@ TERMINUS_DOES_MULTIDEV_EXIST()
 if [[ "$RECREATE_MULTIDEV" == "0" ]]
 then
 	echo -e "\nSkipping recreation of multidev for $SITE_NAME..."
-    terminus env:clone-content -- $SITE_NAME.live update-wp
-    terminus wp $SITE_NAME.update-wp -- search-replace "$LIVE_URL" "$MULTIDEV_URL"
 else
 	# delete the multidev environment if it exists
 	echo -e "\nDeleting the ${MULTIDEV} multidev environment for $SITE_NAME..."
